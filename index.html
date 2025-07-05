@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script defer src="/script/script.js"></script>
+  </head>
+  <body
+    class="grid place-content-center h-screen bg-blue-100 text-sm font-[Manrope]"
+  >
+    <!-- Article preview card container -->
+    <div
+      class="flex flex-col md:flex-row max-w-xl md:max-w-5xl bg-white rounded-2xl"
+    >
+      <!-- Article Image -->
+      <div class="img w-full h-full">
+        <img
+          src="./images/drawers.jpg"
+          alt="a bouquet on a drawers"
+          class="w-full h-full rounded-t-2xl md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none"
+        />
+      </div>
+
+      <!-- Article content and profile container -->
+      <div class="flex flex-col justify-between">
+        <!-- Article content start here -->
+        <div class="px-10 pt-10">
+          <h1 class="font-bold text-xl">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="pt-5 pb-5 decoration-[]">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+
+        <!-- Article profile start here -->
+        <div class="flex flex-col relative">
+          <div
+            id="profile"
+            class="flex justify-center items-center gap-3 px-10 pb-5"
+          >
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt=""
+              class="w-15 rounded-full"
+            />
+            <div>
+              <p class="font-bold">Michelle Appleton</p>
+              <p class="date">28 Jun 2020</p>
+            </div>
+
+            <!-- Article share button -->
+            <div
+              id="share-btn"
+              class="w-10 h-10 share ml-auto bg-amber-50 rounded-full grid place-content-center hover:cursor-pointer"
+            >
+              <img src="./images/icon-share.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Bottom share option start here -->
+
+          <div
+            id="footer-share"
+            class="flex hidden justify-center items-center gap-3 px-10 pb-10 bg-gray-600 py-3 rounded-b-2xl md:rounded-bl-none md:rounded-br-2xl"
+          >
+            <span class="uppercase text-white">share</span>
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="facebook icon"
+            /></a>
+            <a href="#"
+              ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
+            /></a>
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="twitter icon"
+            /></a>
+            <div
+              id="hide-share-btn"
+              class="w-10 h-10 share ml-auto bg-amber-50 rounded-full grid place-content-center hover:cursor-pointer"
+            >
+              <img src="./images/icon-share.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- tootip share option start here -->
+          <div
+            id="share-option"
+            class="flex items-center justify-between gap-5 absolute top-[-50px] right-[-20px] rounded-xl bg-[#4A5568] py-3 px-5 hidden"
+          >
+            <span class="uppercase text-white">share</span>
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="facebook icon"
+            /></a>
+            <a href="#"
+              ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
+            /></a>
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="twitter icon"
+            /></a>
+            <div
+              class="w-0 h-0 border-t-[15px] border-t-[#4A5568] border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent absolute top-10 right-18"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
